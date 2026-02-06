@@ -75,14 +75,14 @@ for idx in IDX_LIST:
                 if idx % 2 == 0:
                     # even index
                     multiplication(
-                        ram1[idx], 0,
+                        ram1[idx], ram1[idx+1],
                         b, 0,
                         omega[idx]
                     )
                 else:
                     # odd index
                     multiplication(
-                        0, ram1[idx],
+                        ram1[idx-1], ram1[idx],
                         0, b,
                         omega[idx]
                     )
