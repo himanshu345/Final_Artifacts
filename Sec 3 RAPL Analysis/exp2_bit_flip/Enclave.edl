@@ -1,0 +1,10 @@
+enclave {
+    from "mbedtls_SGX.edl" import *;
+    trusted {
+        public int ecall_setup_key([in, size=n_len] const unsigned char* n, size_t n_len, 
+                                   [in, size=d_len] const unsigned char* d, size_t d_len);
+        public int ecall_rsa_benchmark([in, size=msg_len] const unsigned char* msg, size_t msg_len, 
+                                       [out, size=sig_len] unsigned char* sig, size_t sig_len, 
+                                       uint32_t iterations);
+    };
+};

@@ -1,0 +1,36 @@
+iterations  : 15000000000
+operand     : 0x0000000000000000
+energy (µJ) : 37644434
+elapsed (ns): 4721733031
+iterations  : 15000000000
+operand     : 0x00000000000000FF
+energy (µJ) : 37970789
+elapsed (ns): 4703254348
+iterations  : 15000000000
+operand     : 0x000000000000FFFF
+energy (µJ) : 37561549
+elapsed (ns): 4704237419
+iterations  : 15000000000
+operand     : 0x0000000000FFFFFF
+energy (µJ) : 37079800
+elapsed (ns): 4703278507
+iterations  : 15000000000
+operand     : 0x00000000FFFFFFFF
+energy (µJ) : 47874694
+elapsed (ns): 4970837392
+iterations  : 15000000000
+operand     : 0x000000FFFFFFFFFF
+energy (µJ) : 37094876
+elapsed (ns): 4702724030
+iterations  : 15000000000
+operand     : 0x0000FFFFFFFFFFFF
+energy (µJ) : 37376796
+elapsed (ns): 4703027375
+iterations  : 15000000000
+operand     : 0x00FFFFFFFFFFFFFF
+energy (µJ) : 37585109
+elapsed (ns): 4702781252
+iterations  : 15000000000
+operand     : 0xFFFFFFFFFFFFFFFF
+energy (µJ) : 37550746
+elapsed (ns): 4702686307

@@ -1,0 +1,20 @@
+enclave {
+    from "mbedtls_SGX.edl" import *;
+    trusted {
+        /* Setup now accepts the N and D buffers */
+        public int ecall_setup_key([in, size=n_len] const unsigned char* n, size_t n_len, 
+                                   [in, size=d_len] const unsigned char* d, size_t d_len);
+        
+        public void ecall_empty_loop(uint32_t iterations);
+
+        /* Benchmark now includes stop_bits */
+        public int ecall_rsa_partial_benchmark(
+            [in, size=msg_len] const unsigned char* msg, 
+            size_t msg_len, 
+            [out, size=sig_len] unsigned char* sig, 
+            size_t sig_len,
+            int stop_bits,
+            uint32_t iterations
+        );
+    };
+};
